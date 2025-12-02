@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Earnings Presentation</title>
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+  
+<section>
+  <h2>Quarterly Earnings Report</h2>
+  <p>Email: 24f1002102@ds.study.iitm.ac.in</p>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+## Markdown Slide  
+This slide is written **in Markdown**.
+</textarea>
+</section>
+
+<section>
+  <h3>Financial Formula</h3>
+  <p>$$ROI = \frac{Net\ Gain}{Investment} \times 100$$</p>
+</section>
+
+<section>
+  <h3>Animated List (Fragments)</h3>
+  <ul>
+    <li class="fragment">Revenue Growth</li>
+    <li class="fragment">Market Expansion</li>
+    <li class="fragment">Profit Increase</li>
+  </ul>
+  <aside class="notes">
+    Explain each bullet point slowly for audience clarity.
+  </aside>
+</section>
+
+<section>
+  <h3>Code Example</h3>
+  <pre><code class="language-python">
+def profit(revenue, cost):
+    return revenue - cost
+  </code></pre>
+</section>
+
+</div>
+</div>
+
+<script src="reveal.js/dist/reveal.js"></script>
+<script src="reveal.js/plugin/markdown/markdown.js"></script>
+<script src="reveal.js/plugin/highlight/highlight.js"></script>
+<script src="reveal.js/plugin/math/math.js"></script>
+
+<script>
+Reveal.initialize({
+  hash: true,
+  plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
+});
+</script>
+
+</body>
+</html>
