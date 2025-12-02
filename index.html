@@ -3,55 +3,107 @@
 <head>
   <meta charset="utf-8">
   <title>Earnings Presentation</title>
+
+  <!-- Reveal Core CSS -->
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+
+  <!-- Highlight.js styling -->
+  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+
+  <style>
+    .footer {
+      position: fixed;
+      bottom: 8px;
+      right: 20px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 
 <body>
+
 <div class="reveal">
 <div class="slides">
-  
+
+<!-- Title Slide -->
 <section>
-  <h2>Quarterly Earnings Report</h2>
-  <p>Email: 24f1002102@ds.study.iitm.ac.in</p>
+  <h1>Quarterly Earnings Report</h1>
+  <p>Technical Consultant</p>
+  <p><b>Email:</b> 24f1002102@ds.study.iitm.ac.in</p>
+
+  <aside class="notes">
+    Introduce yourself and mention this will be a modern interactive presentation.
+  </aside>
 </section>
 
+<!-- Markdown Slide -->
 <section data-markdown>
 <textarea data-template>
 ## Markdown Slide  
+
 This slide is written **in Markdown**.
+
+- Easy to edit
+- Fast to write
+- Automatically styled
+
 </textarea>
 </section>
 
+<!-- Math Slide -->
 <section>
   <h3>Financial Formula</h3>
-  <p>$$ROI = \frac{Net\ Gain}{Investment} \times 100$$</p>
+  <p>Investment return equation:</p>
+
+  <p>\\[
+    ROI = \frac{Net\;Gain}{Investment} \times 100
+  \\]</p>
+
+  <aside class="notes">
+    Explain ROI: it measures profitability relative to investment.
+  </aside>
 </section>
 
+<!-- Fragments -->
 <section>
-  <h3>Animated List (Fragments)</h3>
+  <h3>Key Takeaways</h3>
   <ul>
     <li class="fragment">Revenue Growth</li>
     <li class="fragment">Market Expansion</li>
     <li class="fragment">Profit Increase</li>
   </ul>
+
   <aside class="notes">
-    Explain each bullet point slowly for audience clarity.
+    Present items one-by-one to maintain focus.
   </aside>
 </section>
 
+<!-- Code Sample -->
 <section>
   <h3>Code Example</h3>
   <pre><code class="language-python">
 def profit(revenue, cost):
     return revenue - cost
+
+print(profit(150000, 90000))
   </code></pre>
+
+  <aside class="notes">
+    Simple function: profit = revenue - cost.
+  </aside>
 </section>
 
 </div>
 </div>
 
+<div class="footer">24f1002102@ds.study.iitm.ac.in</div>
+
+<!-- Reveal JS -->
 <script src="reveal.js/dist/reveal.js"></script>
+
+<!-- Plugins -->
 <script src="reveal.js/plugin/markdown/markdown.js"></script>
 <script src="reveal.js/plugin/highlight/highlight.js"></script>
 <script src="reveal.js/plugin/math/math.js"></script>
@@ -59,7 +111,14 @@ def profit(revenue, cost):
 <script>
 Reveal.initialize({
   hash: true,
-  plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
+  plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ],
+  slideNumber: true,
+  backgroundTransition: 'fade',
+  transition: 'slide',
+  math: {
+    // Use KaTeX for math
+    renderer: 'katex'
+  }
 });
 </script>
 
