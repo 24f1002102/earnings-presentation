@@ -47,7 +47,7 @@ Email: 24f1002102@ds.study.iitm.ac.in
   </ul>
 </section>
 
-<!-- Syntax Highlighting Slide (required) -->
+<!-- Syntax Highlighting Slide -->
 <section>
   <h2>Sample Code</h2>
   <pre><code class="language-javascript">
@@ -58,6 +58,27 @@ function greet(name) {
 
 console.log(greet("World"));
   </code></pre>
+</section>
+
+<!-- Mathematical Equations Slide (NEW) -->
+<section>
+  <h2>Financial Formula</h2>
+
+  <p>
+    The Return on Investment (ROI) formula is:
+  </p>
+
+  <p>
+    $$ ROI = \frac{Net\ Gain}{Investment} \times 100 $$
+  </p>
+
+  <p>
+    Compound interest is calculated as:
+  </p>
+
+  <p>
+    $$ A = P(1 + \frac{r}{n})^{nt} $$
+  </p>
 </section>
 
 </div>
@@ -72,10 +93,13 @@ console.log(greet("World"));
 <!-- Syntax highlight plugin -->
 <script src="reveal.js/plugin/highlight/highlight.js"></script>
 
+<!-- Math plugin (NEW) -->
+<script src="reveal.js/plugin/math/math.js"></script>
+
 <script>
 Reveal.initialize({
   hash: true,
-  plugins: [ RevealMarkdown, RevealHighlight ]
+  plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
 });
 </script>
 
