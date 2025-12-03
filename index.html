@@ -8,6 +8,9 @@
 
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+
+  <!-- Syntax highlighting theme -->
+  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
 </head>
 
 <body>
@@ -34,7 +37,7 @@ Email: 24f1002102@ds.study.iitm.ac.in
 </textarea>
 </section>
 
-<!-- Fragment Animation Slide (required) -->
+<!-- Fragment Animation Slide -->
 <section>
   <h2>Animated Highlights</h2>
   <ul>
@@ -42,6 +45,19 @@ Email: 24f1002102@ds.study.iitm.ac.in
     <li class="fragment">Cost Reduction</li>
     <li class="fragment">Profit Increase</li>
   </ul>
+</section>
+
+<!-- Syntax Highlighting Slide (required) -->
+<section>
+  <h2>Sample Code</h2>
+  <pre><code class="language-javascript">
+// Simple JS function
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet("World"));
+  </code></pre>
 </section>
 
 </div>
@@ -53,10 +69,13 @@ Email: 24f1002102@ds.study.iitm.ac.in
 <!-- Markdown plugin -->
 <script src="reveal.js/plugin/markdown/markdown.js"></script>
 
+<!-- Syntax highlight plugin -->
+<script src="reveal.js/plugin/highlight/highlight.js"></script>
+
 <script>
 Reveal.initialize({
   hash: true,
-  plugins: [ RevealMarkdown ]
+  plugins: [ RevealMarkdown, RevealHighlight ]
 });
 </script>
 
