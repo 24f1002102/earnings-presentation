@@ -2,14 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Email Slide</title>
+  <title>Earnings Presentation</title>
 
   <!-- Email: 24f1002102@ds.study.iitm.ac.in -->
 
+  <!-- Core CSS -->
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
 
-  <!-- Syntax highlighting theme -->
+  <!-- Syntax highlighting -->
   <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
 </head>
 
@@ -20,65 +21,89 @@
 
 <!-- Email Slide -->
 <section>
-  <h1>24f1002102@ds.study.iitm.ac.in</h1>
-  <p>24f1002102@ds.study.iitm.ac.in</p>
-  <h2>24f1002102@ds.study.iitm.ac.in</h2>
-  <a href="mailto:24f1002102@ds.study.iitm.ac.in">24f1002102@ds.study.iitm.ac.in</a>
+  <h1>Quarterly Earnings Report</h1>
+  <p>Prepared by: <b>24f1002102@ds.study.iitm.ac.in</b></p>
+
+  <aside class="notes">
+    Introduce yourself and mention that this presentation covers quarterly results.
+  </aside>
 </section>
 
 <!-- Markdown Slide -->
 <section data-markdown>
 <textarea data-template>
-# Markdown Slide
+# Markdown Slide  
 
-This is a **Markdown** slide.
+This slide is written **in Markdown**.
 
-Email: 24f1002102@ds.study.iitm.ac.in
+Email: **24f1002102@ds.study.iitm.ac.in**
+
+- Easy to edit  
+- Fast to write  
+- Automatically styled  
+
+Note: Markdown is rendered automatically by Reveal.js.
 </textarea>
+
+<aside class="notes">
+  Explain that markdown is used for quick and easy slide creation.
+</aside>
 </section>
 
-<!-- Fragment Animation Slide -->
+<!-- Animated Fragments Slide -->
 <section>
-  <h2>Animated Highlights</h2>
+  <h2>Business Highlights</h2>
+
   <ul>
     <li class="fragment">Revenue Growth</li>
-    <li class="fragment">Cost Reduction</li>
+    <li class="fragment">Expense Reduction</li>
     <li class="fragment">Profit Increase</li>
   </ul>
+
+  <aside class="notes">
+    Reveal each bullet one-by-one to maintain audience focus.
+  </aside>
 </section>
 
-<!-- Syntax Highlighting Slide -->
+<!-- Code Highlight Slide -->
 <section>
-  <h2>Sample Code</h2>
-  <pre><code class="language-javascript">
-// Simple JS function
-function greet(name) {
-  return `Hello, ${name}!`;
-}
+  <h2>Example Code</h2>
 
-console.log(greet("World"));
+  <pre><code class="language-python">
+def profit(revenue, cost):
+    return revenue - cost
+
+print(profit(150000, 90000))
   </code></pre>
+
+  <aside class="notes">
+    Demonstrate simple profit calculation logic using Python.
+  </aside>
 </section>
 
-<!-- Mathematical Equations Slide (NEW) -->
+<!-- Mathematical Equations Slide -->
 <section>
-  <h2>Financial Formula</h2>
+  <h2>Financial Equations</h2>
 
-  <p>
-    The Return on Investment (ROI) formula is:
-  </p>
+  <p>Return on Investment:</p>
+  <p>$$ ROI = \frac{Net\ Gain}{Investment} \times 100 $$</p>
 
-  <p>
-    $$ ROI = \frac{Net\ Gain}{Investment} \times 100 $$
-  </p>
+  <p>Compound Interest:</p>
+  <p>$$ A = P(1 + \frac{r}{n})^{nt} $$</p>
 
-  <p>
-    Compound interest is calculated as:
-  </p>
+  <aside class="notes">
+    Review the meaning of ROI and compound interest.
+  </aside>
+</section>
 
-  <p>
-    $$ A = P(1 + \frac{r}{n})^{nt} $$
-  </p>
+<!-- Contact Slide -->
+<section>
+  <h2>Contact</h2>
+  <p>Email: <b>24f1002102@ds.study.iitm.ac.in</b></p>
+
+  <aside class="notes">
+    Thank the audience and invite questions.
+  </aside>
 </section>
 
 </div>
@@ -87,19 +112,17 @@ console.log(greet("World"));
 <!-- Reveal core -->
 <script src="reveal.js/dist/reveal.js"></script>
 
-<!-- Markdown plugin -->
+<!-- Plugins -->
 <script src="reveal.js/plugin/markdown/markdown.js"></script>
-
-<!-- Syntax highlight plugin -->
 <script src="reveal.js/plugin/highlight/highlight.js"></script>
-
-<!-- Math plugin (NEW) -->
 <script src="reveal.js/plugin/math/math.js"></script>
+<script src="reveal.js/plugin/notes/notes.js"></script>
 
 <script>
 Reveal.initialize({
   hash: true,
-  plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
+  slideNumber: true,
+  plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
 });
 </script>
 
