@@ -86,25 +86,20 @@ print(profit(150000, 90000))
   <h2>Financial Equations</h2>
 
   <p>Return on Investment:</p>
-  <p>$$ ROI = \frac{Net\ Gain}{Investment} \times 100 $$</p>
+  <p>\[
+    ROI = \frac{Net\ Gain}{Investment} \times 100
+  \]</p>
 
   <p>Compound Interest:</p>
-  <p>$$ A = P(1 + \frac{r}{n})^{nt} $$</p>
+  <p>\[
+    A = P(1 + \frac{r}{n})^{nt}
+  \]</p>
 
   <aside class="notes">
     Review the meaning of ROI and compound interest.
   </aside>
 </section>
 
-<!-- Contact Slide -->
-<section>
-  <h2>Contact</h2>
-  <p>Email: <b>24f1002102@ds.study.iitm.ac.in</b></p>
-
-  <aside class="notes">
-    Thank the audience and invite questions.
-  </aside>
-</section>
 
 </div>
 </div>
@@ -122,9 +117,12 @@ print(profit(150000, 90000))
 Reveal.initialize({
   hash: true,
   slideNumber: true,
-  plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+  plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ],
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+    config: 'TeX-AMS_HTML',
+  }
 });
 </script>
-
 </body>
 </html>
