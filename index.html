@@ -15,6 +15,7 @@
 <div class="reveal">
 <div class="slides">
 
+<!-- Email Slide -->
 <section>
   <h1>24f1002102@ds.study.iitm.ac.in</h1>
   <p>24f1002102@ds.study.iitm.ac.in</p>
@@ -22,14 +23,30 @@
   <a href="mailto:24f1002102@ds.study.iitm.ac.in">24f1002102@ds.study.iitm.ac.in</a>
 </section>
 
+<!-- Markdown Slide (required) -->
+<section data-markdown>
+<textarea data-template>
+# Markdown Slide
+
+This is a **Markdown** slide.
+
+Email: 24f1002102@ds.study.iitm.ac.in
+</textarea>
+</section>
+
 </div>
 </div>
 
+<!-- Reveal core -->
 <script src="reveal.js/dist/reveal.js"></script>
+
+<!-- Markdown plugin -->
+<script src="reveal.js/plugin/markdown/markdown.js"></script>
 
 <script>
 Reveal.initialize({
-  hash: true
+  hash: true,
+  plugins: [ RevealMarkdown ]
 });
 </script>
 
